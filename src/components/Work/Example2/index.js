@@ -7,14 +7,14 @@ import { Box } from "@mui/system";
 import { CardHeader } from "@mui/material";
 import { Link } from "react-router-dom";
 
-export default function Example1() {
+export default function Example2() {
   return (
     <>
       <Card>
         <CardHeader
           title={
             <Typography variant="h4" align="center">
-              Personal Art Store
+              Happy Tails Pet Supply Store
             </Typography>
           }
           titleTypographyProps={{ align: "center" }}
@@ -27,9 +27,9 @@ export default function Example1() {
         />
         <CardMedia
           component="img"
-          alt="Home page of personal art website"
+          alt="Home page of Happy Tails Pet Supply Store"
           sx={{ maxHeight: 800 }}
-          src={`/images/siteImages/art-store.jpeg`}
+          src={`/images/siteImages/happy-tails.jpeg`}
         />
         <Box>
           <CardContent
@@ -46,15 +46,15 @@ export default function Example1() {
               component="div"
               textAlign={"center"}
             >
-              The Personal Art Store is a labor of love, reflecting both my
-              artistic vision and technical expertise. This bespoke e-commerce
-              site, developed as a personal passion project, showcases my
-              original artwork and utilizes the robust MERN Stack with the
-              integration of GraphQL. Each stroke of creativity and line of code
-              embodies my dedication to craftsmanship. The challenge was to
-              construct a fully functional e-commerce platform, providing a
-              canvas for my art to reach a broader audience. Visit my
-              Art Store to experience the blend of art and technology in my life.
+              Happy Tails Pets Supply Store is a collaborative effort between
+              myself and three skilled developers, marking the culmination of
+              the University of Arizona's Full Stack Web and Software
+              Development Bootcamp. This sophisticated e-commerce platform is a
+              testament to our shared passion for pets and our commitment to
+              creating a significant impact in the ever-expanding realm of
+              e-commerce. Meticulously designed and developed, Happy Tails Pets
+              Supply offers a seamless shopping experience for pet enthusiasts,
+              combining functionality with a user-centric approach.{" "}
             </Typography>
             <Typography
               variant="subtitle"
@@ -63,12 +63,12 @@ export default function Example1() {
               textAlign={"center"}
             >
               <Link
-                to="https://chrisvergesart-a007f39ad1a3.herokuapp.com/"
+                to="https://morning-mesa-14358-6466ec7ce729.herokuapp.com/"
                 style={{ textDecoration: "underline", color: "#666666" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Click Here to visit the Personal Art Store
+                Click Here to visit Happy Tails Pet Supply Store
               </Link>
             </Typography>
             <Typography
@@ -78,12 +78,13 @@ export default function Example1() {
               textAlign={"center"}
             >
               <Link
-                to="https://github.com/cverges1/art-store"
+                to="https://github.com/cverges1/ecommerce-store-v2"
                 style={{ textDecoration: "underline", color: "#666666" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Click Here to visit the Personal Art Store's Github Repository
+                Click Here to visit the Happy Tails Pet Supply Store's Github
+                Repository
               </Link>
             </Typography>
           </CardContent>

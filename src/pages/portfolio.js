@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/system/Unstable_Grid/Grid";
-import Card from "@mui/material/Card";
-import Work from "../components/Work/Example1";
+import Example1 from "../components/Work/Example1";
+import Example2 from "../components/Work/Example2";
+import Example3 from "../components/Work/Example3";
 
 export default function Portfolio() {
   return (
@@ -22,19 +22,14 @@ export default function Portfolio() {
         </Typography>
       </Box>
       <Grid container spacing={2} justifyContent="center" margin={5}>
-        <Grid item lg={6}>
-          <Card
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              backgroundColor: (theme) =>
-                theme.palette.mode === "light"
-                  ? theme.palette.grey[200]
-                  : theme.palette.grey[700],
-            }}
-          >
-            <Work />
-          </Card>
+        <Grid lg={8}>
+          <Example1 />
+        </Grid>
+        <Grid lg={8}>
+          <Example2 />
+        </Grid>
+        <Grid lg={8}>
+          <Example3 />
         </Grid>
       </Grid>
     </Box>
