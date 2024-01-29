@@ -41,7 +41,7 @@ const ContactCard = () => {
   };
 
   return (
-    <Container sx={{mt: 5}}>
+    <Container>
       <form ref={form} onSubmit={handleSubmit}>
         <TextField
           type="text"
@@ -81,7 +81,7 @@ const ContactCard = () => {
           className="btn btn-primary"
           fullWidth
           sx={{backgroundColor: "#666666", "&:hover": {
-            backgroundColor: "white",
+            backgroundColor: "whitesmoke",
             color: "black",
           },}}
         >

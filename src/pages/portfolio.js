@@ -1,6 +1,5 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/system/Unstable_Grid/Grid";
 import Example1 from "../components/Work/Example1";
 import Example2 from "../components/Work/Example2";
@@ -17,9 +16,6 @@ export default function Portfolio() {
           borderColor: "divider",
         }}
       >
-        <Typography>
-          <h1>Portfolio</h1>
-        </Typography>
       </Box>
       <Grid container spacing={2} justifyContent="center" margin={5}>
         <Grid lg={8}>

@@ -6,7 +6,7 @@ import Grid from "@mui/material/Grid";
 export default function StickyFooter() {
   return (
     <Grid container justifyContent="center">
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body2" color="whitesmoke">
         <Link color="inherit" href="https://github.com/cverges1">
           Github
         </Link>{" "}
