@@ -1,13 +1,53 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
 import { CardHeader } from "@mui/material";
-import { Link } from "react-router-dom";
+import Slider from "react-slick"; 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
+
+// Define NextArrow and PrevArrow components outside of Example1 component
+const NextArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div
+      className="slick-arrow"
+      style={{ right: "0", top: "50%", transform: "translateY(-50%)", zIndex: 1, position: "absolute" }}
+      onClick={onClick}
+    >
+      <ArrowForwardIos />
+    </div>
+  );
+};
+
+const PrevArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div
+      className="slick-arrow"
+      style={{ left: "0", top: "50%", transform: "translateY(-50%)", zIndex: 1, position: "absolute" }}
+      onClick={onClick}
+    >
+      <ArrowBackIos />
+    </div>
+  );
+};
 
 export default function Example2() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+  };
+
   return (
     <>
       <Card>
@@ -19,30 +59,38 @@ export default function Example2() {
           }
           titleTypographyProps={{ align: "center" }}
           sx={{
-            backgroundColor: (theme) =>
-              theme.palette.mode === "light"
-                ? theme.palette.grey[200]
-                : theme.palette.grey[700],
+            backgroundColor: "#666666",
+            opacity: 0.85,
+            color: "whitesmoke"
           }}
         />
-        <CardMedia
-          component="img"
-          alt="Home page of Happy Tails Pet Supply Store"
-          sx={{ maxHeight: 800 }}
-          src={`/images/siteImages/happy-tails.jpeg`}
-        />
         <Box>
+        <Slider {...settings}>
+          <div>
+            <img src={`/images/siteImages/happyTails/happy-tails.jpeg`} alt="homepage" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+          </div>
+          <div>
+            <img src={`/images/siteImages/happyTails/category.png`} alt="category page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+          </div>
+          <div>
+            <img src={`/images/siteImages/happyTails/single-prod.png`} alt="single product page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+          </div>
+          <div>
+            <img src={`/images/siteImages/happyTails/login.png`} alt="login page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+          </div>
+          <div>
+            <img src={`/images/siteImages/happyTails/signup-page.png`} alt="signup page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+          </div>
+        </Slider>
           <CardContent
             sx={{
-              backgroundColor: (theme) =>
-                theme.palette.mode === "light"
-                  ? theme.palette.grey[200]
-                  : theme.palette.grey[700],
+              backgroundColor: "#666666",
+              opacity: 0.85,
             }}
           >
             <Typography
               variant="subtitle"
-              color="text.secondary"
+              color="whitesmoke"
               component="div"
               textAlign={"center"}
             >
@@ -58,13 +106,13 @@ export default function Example2() {
             </Typography>
             <Typography
               variant="subtitle"
-              color="text.secondary"
+              color="whitesmoke"
               component="div"
               textAlign={"center"}
             >
               <Link
                 to="https://morning-mesa-14358-6466ec7ce729.herokuapp.com/"
-                style={{ textDecoration: "underline", color: "#666666" }}
+                style={{ textDecoration: "underline", color: "whitesmoke", fontWeight: "bold" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -79,7 +127,7 @@ export default function Example2() {
             >
               <Link
                 to="https://github.com/cverges1/ecommerce-store-v2"
-                style={{ textDecoration: "underline", color: "#666666" }}
+                style={{ textDecoration: "underline", color: "whitesmoke", fontWeight: "bold" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >

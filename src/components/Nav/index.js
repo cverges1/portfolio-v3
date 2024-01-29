@@ -41,28 +41,10 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
   const handleTabClick = (event, newValue) => {
     setValue(newValue);
-  
-    // Check if the clicked tab is "Shop" before toggling the popover
-    if (newValue === 3) {
-      setAnchorEl(event.currentTarget);
-    } else {
-      setAnchorEl(null);
-    }
   };
   
-
-  const handlePopoverClose = () => {
-    setAnchorEl(null);
-  };
-
-  const open = Boolean(anchorEl);
-  const id = open ? "simple-popover" : undefined;
-
-
   return (
     <Box
       sx={{
@@ -70,9 +52,7 @@ export default function BasicTabs() {
         display: "flex",
         flexDirection: "column",
         paddingX: 2,
-        mb: 1,
         alignItems: "center",
-        borderBottom: 1, borderColor: "divider"
       }}
     >
 <Box
@@ -101,25 +81,25 @@ export default function BasicTabs() {
       {...a11yProps(0)}
     />
     <Tab
-      label="Contact"
+      label="Portfolio"
       component={Link}
-      to="/contact"
+      to="/portfolio"
       onClick={(event) => handleTabClick(event, 1)}
       sx={{ color: "black", flex: 1 }}
       {...a11yProps(1)}
     />
     <Tab
-      label="Portfolio"
+      label="Resume"
       component={Link}
-      to="/portfolio"
+      to="/resume"
       onClick={(event) => handleTabClick(event, 2)}
       sx={{ color: "black", flex: 1 }}
       {...a11yProps(2)}
     />
-    <Tab
-      label="Resume"
+        <Tab
+      label="Contact"
       component={Link}
-      to="/resume"
+      to="/contact"
       onClick={(event) => handleTabClick(event, 3)}
       sx={{ color: "black", flex: 1 }}
       {...a11yProps(3)}

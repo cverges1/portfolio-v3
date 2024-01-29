@@ -8,7 +8,14 @@ import CardHeader from "@mui/material/CardHeader";
 
 const Contact = () => {
   return (
-    <Container sx={{ mt: 1}}>
+    <Container
+      sx={{
+        mt: 6,
+        minHeight: "100vh", // Ensure the container covers the full viewport height
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <Card>
         <CardHeader
           title="Contact Chris"
@@ -16,12 +23,11 @@ const Contact = () => {
           titleTypographyProps={{ align: "center" }}
           subheaderTypographyProps={{
             align: "center",
+            color: "whitesmoke",
           }}
           sx={{
-            backgroundColor: (theme) =>
-              theme.palette.mode === "light"
-                ? theme.palette.grey[200]
-                : theme.palette.grey[700],
+            backgroundColor: "#666666",
+            color: "whitesmoke",
           }}
         />
         <CardContent>

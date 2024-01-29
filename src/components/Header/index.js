@@ -6,7 +6,7 @@ const Header = () => {
     return(
 <Container
 component="main"
-sx={{ pt: 1, pb: 4 }}
+sx={{ pt: 1, pb: 4, borderBottom: "solid" }}
 >
 <Typography
   component="h1"
