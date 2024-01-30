@@ -1,28 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Portfolio from "./pages/portfolio";
-import About from "./pages/about";
-import Contact from "./pages/contact";
-import Resume from "./pages/resume";
+import Page from "./pages";
 import Nav from "./components/Nav";
 import StickyFooter from "./components/Footer";
 import Header from "./components/Header";
 
+const pages = ['About', 'Portfolio', 'Contact', 'Resume']
+
 function App() {
+  const [currentPage, setCurrentPage] = useState("About");
+
   return (
-<Router>
-  <React.Fragment>
-    <Header />
-    <Nav />
-  <Routes>
-    <Route path="/about" element={<About />} />
-    <Route path="/contact" element={<Contact />} />
-    <Route path="/portfolio" element={<Portfolio />} />
-    <Route path="/resume" element={<Resume />} />
-  </Routes>
-  <StickyFooter />
-  </React.Fragment>
-</Router>
+    <Router>
+      <React.Fragment>
+        <Header />
+        <Nav
+          pages={pages}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
+        <main>
+          <Page currentPage={currentPage} />
+        </main>
+        <StickyFooter />
+      </React.Fragment>
+    </Router>
   );
 }
 

@@ -60,8 +60,7 @@ export default function Example2() {
           titleTypographyProps={{ align: "center" }}
           sx={{
             backgroundColor: "#666666",
-            opacity: 0.85,
-            color: "whitesmoke"
+            opacity: 0.9,
           }}
         />
         <Box>
@@ -85,12 +84,11 @@ export default function Example2() {
           <CardContent
             sx={{
               backgroundColor: "#666666",
-              opacity: 0.85,
+              opacity: 0.9,
             }}
           >
             <Typography
               variant="subtitle"
-              color="whitesmoke"
               component="div"
               textAlign={"center"}
             >
@@ -106,13 +104,12 @@ export default function Example2() {
             </Typography>
             <Typography
               variant="subtitle"
-              color="whitesmoke"
               component="div"
               textAlign={"center"}
             >
               <Link
                 to="https://morning-mesa-14358-6466ec7ce729.herokuapp.com/"
-                style={{ textDecoration: "underline", color: "whitesmoke", fontWeight: "bold" }}
+                style={{ textDecoration: "underline", fontWeight: "bold" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -127,7 +124,7 @@ export default function Example2() {
             >
               <Link
                 to="https://github.com/cverges1/ecommerce-store-v2"
-                style={{ textDecoration: "underline", color: "whitesmoke", fontWeight: "bold" }}
+                style={{ textDecoration: "underline", fontWeight: "bold" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
