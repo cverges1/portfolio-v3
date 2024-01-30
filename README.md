@@ -14,11 +14,11 @@
 
   ## Installation
   
-  To view the source code for this project visit: https://github.com/cverges1/Chris-Verges-Portfolio-v2
+  To view the source code for this project visit: https://github.com/cverges1/portfolio-v3
   
   ## Usage
   
-This applicsation is currently in development. To use, download the source code and run `npm i` followed by `npm start` to see the development build of this application.
+Head to https://cverges1.github.io/portfolio-v3/ to find out more about myself and my work or to connect.
   
   ## Credits
   
