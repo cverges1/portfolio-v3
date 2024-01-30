@@ -92,7 +92,7 @@ export default function Example3() {
               component="div"
               textAlign={"center"}
             >
-              The application offers users a comprehensive guide to activities
+              City Capers offers users a comprehensive guide to activities
               and attractions in any city of their choice. By inputting a
               specific city and date, users gain access to a curated list of
               upcoming events, recommended dining options, and notable points of
