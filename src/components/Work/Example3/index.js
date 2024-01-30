@@ -113,6 +113,7 @@ export default function Example3() {
                 style={{
                   textDecoration: "underline",
                   fontWeight: "bold",
+                  color: "black"
                 }}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -130,6 +131,7 @@ export default function Example3() {
                 style={{
                   textDecoration: "underline",
                   fontWeight: "bold",
+                  color: "black"
                 }}
                 target="_blank"
                 rel="noopener noreferrer"

@@ -5,10 +5,10 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
 import { CardHeader } from "@mui/material";
-import Slider from "react-slick"; 
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
+import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 
 // Define NextArrow and PrevArrow components outside of Example1 component
 const NextArrow = (props) => {
@@ -16,7 +16,13 @@ const NextArrow = (props) => {
   return (
     <div
       className="slick-arrow"
-      style={{ right: "0", top: "50%", transform: "translateY(-50%)", zIndex: 1, position: "absolute" }}
+      style={{
+        right: "0",
+        top: "50%",
+        transform: "translateY(-50%)",
+        zIndex: 1,
+        position: "absolute",
+      }}
       onClick={onClick}
     >
       <ArrowForwardIos />
@@ -29,7 +35,13 @@ const PrevArrow = (props) => {
   return (
     <div
       className="slick-arrow"
-      style={{ left: "0", top: "50%", transform: "translateY(-50%)", zIndex: 1, position: "absolute" }}
+      style={{
+        left: "0",
+        top: "50%",
+        transform: "translateY(-50%)",
+        zIndex: 1,
+        position: "absolute",
+      }}
       onClick={onClick}
     >
       <ArrowBackIos />
@@ -64,34 +76,75 @@ export default function Example2() {
           }}
         />
         <Box>
-        <Slider {...settings}>
-          <div>
-            <img src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/happy-tails.jpeg`} alt="homepage" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
-          </div>
-          <div>
-            <img src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/category.png`} alt="category page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
-          </div>
-          <div>
-            <img src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/single-prod.png`} alt="single product page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
-          </div>
-          <div>
-            <img src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/login.png`} alt="login page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
-          </div>
-          <div>
-            <img src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/signup-page.png`} alt="signup page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
-          </div>
-        </Slider>
+          <Slider {...settings}>
+            <div>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/happy-tails.jpeg`}
+                alt="homepage"
+                style={{
+                  display: "block",
+                  margin: "auto",
+                  maxWidth: "100%",
+                  maxHeight: "800px",
+                }}
+              />
+            </div>
+            <div>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/category.png`}
+                alt="category page"
+                style={{
+                  display: "block",
+                  margin: "auto",
+                  maxWidth: "100%",
+                  maxHeight: "800px",
+                }}
+              />
+            </div>
+            <div>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/single-prod.png`}
+                alt="single product page"
+                style={{
+                  display: "block",
+                  margin: "auto",
+                  maxWidth: "100%",
+                  maxHeight: "800px",
+                }}
+              />
+            </div>
+            <div>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/login.png`}
+                alt="login page"
+                style={{
+                  display: "block",
+                  margin: "auto",
+                  maxWidth: "100%",
+                  maxHeight: "800px",
+                }}
+              />
+            </div>
+            <div>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/signup-page.png`}
+                alt="signup page"
+                style={{
+                  display: "block",
+                  margin: "auto",
+                  maxWidth: "100%",
+                  maxHeight: "800px",
+                }}
+              />
+            </div>
+          </Slider>
           <CardContent
             sx={{
               backgroundColor: "#666666",
               opacity: 0.9,
             }}
           >
-            <Typography
-              variant="subtitle"
-              component="div"
-              textAlign={"center"}
-            >
+            <Typography variant="subtitle" component="div" textAlign={"center"}>
               Happy Tails Pets Supply Store is a collaborative effort between
               myself and three skilled developers, marking the culmination of
               the University of Arizona's Full Stack Web and Software
@@ -102,14 +155,10 @@ export default function Example2() {
               Supply offers a seamless shopping experience for pet enthusiasts,
               combining functionality with a user-centric approach.{" "}
             </Typography>
-            <Typography
-              variant="subtitle"
-              component="div"
-              textAlign={"center"}
-            >
+            <Typography variant="subtitle" component="div" textAlign={"center"}>
               <Link
                 to="https://morning-mesa-14358-6466ec7ce729.herokuapp.com/"
-                style={{ textDecoration: "underline", fontWeight: "bold" }}
+                style={{ textDecoration: "underline", fontWeight: "bold", color: "black" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -124,7 +173,8 @@ export default function Example2() {
             >
               <Link
                 to="https://github.com/cverges1/ecommerce-store-v2"
-                style={{ textDecoration: "underline", fontWeight: "bold" }}
+                style={{ textDecoration: "underline", fontWeight: "bold", color: "black"
+              }}
                 target="_blank"
                 rel="noopener noreferrer"
               >

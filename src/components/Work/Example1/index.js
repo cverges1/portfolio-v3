@@ -109,7 +109,7 @@ export default function Example1() {
           >
             <Link
               to="https://chrisvergesart-a007f39ad1a3.herokuapp.com/"
-              style={{ textDecoration: "underline", fontWeight: "bold" }}
+              style={{ textDecoration: "underline", fontWeight: "bold", color: "black" }}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -123,7 +123,7 @@ export default function Example1() {
           >
             <Link
               to="https://github.com/cverges1/art-store"
-              style={{ textDecoration: "underline", fontWeight: "bold" }}
+              style={{ textDecoration: "underline", fontWeight: "bold", color: "black" }}
               target="_blank"
               rel="noopener noreferrer"
             >
