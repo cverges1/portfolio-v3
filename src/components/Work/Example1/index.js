@@ -67,19 +67,19 @@ export default function Example1() {
       <Box>
         <Slider {...settings}>
           <div>
-            <img src={`/images/siteImages/artStore/art-store.jpeg`} alt="homepage" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/artStore/art-store.jpeg`} alt="homepage" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
           <div>
-            <img src={`/images/siteImages/artStore/originals.png`} alt="originals page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/artStore/originals.png`} alt="originals page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
           <div>
-            <img src={`/images/siteImages/artStore/prints.png`} alt="prints page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/artStore/prints.png`} alt="prints page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
           <div>
-            <img src={`/images/siteImages/artStore/commissions.png`} alt="commissions page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/artStore/commissions.png`} alt="commissions page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
           <div>
-            <img src={`/images/siteImages/artStore/cart.png`} alt="page with items added to the cart" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/artStore/cart.png`} alt="page with items added to the cart" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
         </Slider>
         <CardContent

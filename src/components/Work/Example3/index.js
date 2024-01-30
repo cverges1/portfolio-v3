@@ -67,19 +67,19 @@ export default function Example3() {
         <Box>
         <Slider {...settings}>
           <div>
-            <img src={`/images/siteImages/cityCapers/city-capers.jpeg`} alt="homepage" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/cityCapers/city-capers.jpeg`} alt="homepage" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
           <div>
-            <img src={`/images/siteImages/cityCapers/featured-cities.png`} alt="originals page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/cityCapers/featured-cities.png`} alt="originals page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
           <div>
-            <img src={`/images/siteImages/cityCapers/find-cities.png`} alt="prints page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/cityCapers/find-cities.png`} alt="prints page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
           <div>
-            <img src={`/images/siteImages/cityCapers/search1.png`} alt="commissions page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/cityCapers/search1.png`} alt="commissions page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
           <div>
-            <img src={`/images/siteImages/cityCapers/search2.png`} alt="page with items added to the cart" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/cityCapers/search2.png`} alt="page with items added to the cart" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
         </Slider>
           <CardContent
