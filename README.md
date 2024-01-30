@@ -8,7 +8,7 @@ This application was created to serve as my personal portfolio so that I can dis
 
 ## Table of Contents
 
--[Website Screenshots](#installation)-[Installation](#installation) -[Usage](#usage) -[Credits](#credits) -[License](#license)
+-[Website Screenshots](#website-screenshots)-[Installation](#installation) -[Usage](#usage) -[Credits](#credits) -[License](#license)
 
 ## Website Screenshots
 
