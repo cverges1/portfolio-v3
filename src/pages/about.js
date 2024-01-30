@@ -10,7 +10,7 @@ export default function About() {
     <Card sx={{ textAlign: "center", background: "none", mt: 7}}>
       <CardMedia
         sx={{ height: 300, width: 300, margin: "auto" }}
-        image="/images/artist.JPG"
+        image={`${process.env.PUBLIC_URL}/images/artist.JPG`}
         title="Chris Verges"
       />
       <CardContent>

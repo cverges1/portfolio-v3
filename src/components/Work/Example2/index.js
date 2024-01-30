@@ -67,19 +67,19 @@ export default function Example2() {
         <Box>
         <Slider {...settings}>
           <div>
-            <img src={`/images/siteImages/happyTails/happy-tails.jpeg`} alt="homepage" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/happy-tails.jpeg`} alt="homepage" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
           <div>
-            <img src={`/images/siteImages/happyTails/category.png`} alt="category page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/category.png`} alt="category page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
           <div>
-            <img src={`/images/siteImages/happyTails/single-prod.png`} alt="single product page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/single-prod.png`} alt="single product page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
           <div>
-            <img src={`/images/siteImages/happyTails/login.png`} alt="login page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/login.png`} alt="login page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
           <div>
-            <img src={`/images/siteImages/happyTails/signup-page.png`} alt="signup page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
+            <img src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/signup-page.png`} alt="signup page" style={{ display: "block", margin: "auto", maxWidth: "100%", maxHeight: "800px" }} />
           </div>
         </Slider>
           <CardContent
