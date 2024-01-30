@@ -60,8 +60,7 @@ export default function Example3() {
           titleTypographyProps={{ align: "center" }}
           sx={{
             backgroundColor: "#666666",
-            opacity: 0.85,
-            color: "whitesmoke",
+            opacity: 0.9,
           }}
         />
         <Box>
@@ -85,12 +84,11 @@ export default function Example3() {
           <CardContent
             sx={{
               backgroundColor: "#666666",
-              opacity: 0.85,
+              opacity: 0.9,
             }}
           >
             <Typography
               variant="subtitle"
-              color="whitesmoke"
               component="div"
               textAlign={"center"}
             >
@@ -107,7 +105,6 @@ export default function Example3() {
             </Typography>
             <Typography
               variant="subtitle"
-              color="whitesmoke"
               component="div"
               textAlign={"center"}
             >
@@ -115,7 +112,6 @@ export default function Example3() {
                 to="https://alugo0823.github.io/travel-guide-api/"
                 style={{
                   textDecoration: "underline",
-                  color: "whitesmoke",
                   fontWeight: "bold",
                 }}
                 target="_blank"
@@ -126,7 +122,6 @@ export default function Example3() {
             </Typography>
             <Typography
               variant="subtitle"
-              color="whitesmoke"
               component="div"
               textAlign={"center"}
             >
@@ -134,7 +129,6 @@ export default function Example3() {
                 to="https://github.com/ALugo0823/travel-guide-api"
                 style={{
                   textDecoration: "underline",
-                  color: "whitesmoke",
                   fontWeight: "bold",
                 }}
                 target="_blank"

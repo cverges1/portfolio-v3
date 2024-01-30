@@ -16,18 +16,6 @@ const Resume = () => {
           borderColor: "divider",
         }}
       >
-        <Typography>
-          <h1>Resume</h1>
-        </Typography>
-      </Box>
-      <Box
-        sx={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          borderColor: "divider",
-        }}
-      >
         <Typography variant='h6'>
         <h5>
             Download my{" "}
