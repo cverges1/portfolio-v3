@@ -4,6 +4,7 @@ import Grid from "@mui/system/Unstable_Grid/Grid";
 import Example1 from "../components/Work/Example1";
 import Example2 from "../components/Work/Example2";
 import Example3 from "../components/Work/Example3";
+import Example4 from "../components/Work/Example4";
 
 export default function Portfolio() {
   return (
@@ -26,6 +27,9 @@ export default function Portfolio() {
         </Grid>
         <Grid lg={8}>
           <Example3 />
+        </Grid>
+        <Grid lg={8}>
+          <Example4 />
         </Grid>
       </Grid>
     </Box>

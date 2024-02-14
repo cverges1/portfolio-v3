@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 
-// Define NextArrow and PrevArrow components outside of Example1 component
+// Define NextArrow and PrevArrow components outside of Example3 component
 const NextArrow = (props) => {
   const { onClick } = props;
   return (
