@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 
-// Define NextArrow and PrevArrow components outside of Example2 component
+// Define NextArrow and PrevArrow components outside of Example4 component
 const NextArrow = (props) => {
   const { onClick } = props;
   return (
@@ -49,7 +49,7 @@ const PrevArrow = (props) => {
   );
 };
 
-export default function Example2() {
+export default function Example4() {
   const settings = {
     dots: true,
     infinite: true,
@@ -66,7 +66,7 @@ export default function Example2() {
         <CardHeader
           title={
             <Typography variant="h4" align="center">
-              Happy Tails Pet Supply Store
+              Pizza Store
             </Typography>
           }
           titleTypographyProps={{ align: "center" }}
@@ -79,7 +79,7 @@ export default function Example2() {
           <Slider {...settings}>
             <div>
               <img
-                src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/happy-tails.jpeg`}
+                src={`${process.env.PUBLIC_URL}/images/siteImages/pizzaStore/home-with-data.png`}
                 alt="homepage"
                 style={{
                   display: "block",
@@ -91,8 +91,8 @@ export default function Example2() {
             </div>
             <div>
               <img
-                src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/category.png`}
-                alt="category page"
+                src={`${process.env.PUBLIC_URL}/images/siteImages/pizzaStore/home-nothing.png`}
+                alt="originals page"
                 style={{
                   display: "block",
                   margin: "auto",
@@ -103,8 +103,8 @@ export default function Example2() {
             </div>
             <div>
               <img
-                src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/single-prod.png`}
-                alt="single product page"
+                src={`${process.env.PUBLIC_URL}/images/siteImages/pizzaStore/create-topping.png`}
+                alt="prints page"
                 style={{
                   display: "block",
                   margin: "auto",
@@ -115,20 +115,8 @@ export default function Example2() {
             </div>
             <div>
               <img
-                src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/login.png`}
-                alt="login page"
-                style={{
-                  display: "block",
-                  margin: "auto",
-                  maxWidth: "100%",
-                  maxHeight: "800px",
-                }}
-              />
-            </div>
-            <div>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/siteImages/happyTails/signup-page.png`}
-                alt="signup page"
+                src={`${process.env.PUBLIC_URL}/images/siteImages/pizzaStore/create-pizza.png`}
+                alt="commissions page"
                 style={{
                   display: "block",
                   margin: "auto",
@@ -145,41 +133,41 @@ export default function Example2() {
             }}
           >
             <Typography variant="subtitle" component="div" textAlign={"center"}>
-              Happy Tails Pets Supply Store is a collaborative effort between
-              myself and three skilled developers, marking the culmination of
-              the University of Arizona's Full Stack Web and Software
-              Development Bootcamp. This sophisticated e-commerce platform is a
-              testament to our shared passion for pets and our commitment to
-              creating a significant impact in the ever-expanding realm of
-              e-commerce. Meticulously designed and developed, Happy Tails Pets
-              Supply offers a seamless shopping experience for pet enthusiasts,
-              combining functionality with a user-centric approach.{" "}
+              The Pizza Store is a robust MERN (MongoDB, Express.js, React.js,
+              Node.js) application tailored for pizza store owners to
+              efficiently manage toppings and pizzas. Crafted as a progressive
+              web app, it seamlessly integrates a RESTful API to facilitate
+              smooth operations.
+            </Typography>
+            <Typography variant="subtitle" component="div" textAlign={"center"}>
+                Users can view, update and delete existing pizzas and toppings as well as create their own.
             </Typography>
             <Typography variant="subtitle" component="div" textAlign={"center"}>
               <Link
-                to="https://morning-mesa-14358-6466ec7ce729.herokuapp.com/"
-                style={{ textDecoration: "underline", fontWeight: "bold", color: "black" }}
+                to="https://pizza-store-9491a3c0ae7c.herokuapp.com/"
+                style={{
+                  textDecoration: "underline",
+                  fontWeight: "bold",
+                  color: "black",
+                }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Click Here to visit Happy Tails Pet Supply Store
+                Click Here to visit the Pizza Store
               </Link>
             </Typography>
-            <Typography
-              variant="subtitle"
-              color="text.secondary"
-              component="div"
-              textAlign={"center"}
-            >
+            <Typography variant="subtitle" component="div" textAlign={"center"}>
               <Link
-                to="https://github.com/cverges1/ecommerce-store-v2"
-                style={{ textDecoration: "underline", fontWeight: "bold", color: "black"
-              }}
+                to="https://github.com/cverges1/pizza-store"
+                style={{
+                  textDecoration: "underline",
+                  fontWeight: "bold",
+                  color: "black",
+                }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Click Here to visit the Happy Tails Pet Supply Store's Github
-                Repository
+                Click Here to visit the Pizza Store's Github Repository
               </Link>
             </Typography>
           </CardContent>
