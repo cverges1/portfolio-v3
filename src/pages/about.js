@@ -28,7 +28,7 @@ export default function About() {
             I'm so glad you made it here! My name is Chris and I am a developer
             based out of Phoenix, Arizona. I began my web developement journey
             in March of 2023 and graduated from the University of Arizona's Full
-            Stack Web Design and Software Development Bootcamp on September 5th.
+            Stack Web Design and Software Development Bootcamp on September 5th the same year.
           </Typography>
           <Typography sx={{ marginBottom: 2, fontSize: "20px" }}>
             I am seeking a job in developement and as a diligent worker, eager
