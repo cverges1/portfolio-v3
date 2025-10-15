@@ -5,6 +5,7 @@ import Example1 from "../components/Work/Example1";
 import Example2 from "../components/Work/Example2";
 import Example3 from "../components/Work/Example3";
 import Example4 from "../components/Work/Example4";
+import Example5 from "../components/Work/Example5";
 
 export default function Portfolio() {
   return (
@@ -16,9 +17,11 @@ export default function Portfolio() {
           justifyContent: "center",
           borderColor: "divider",
         }}
-      >
-      </Box>
+      ></Box>
       <Grid container spacing={2} justifyContent="center" margin={5}>
+        <Grid lg={8}>
+          <Example5 />
+        </Grid>
         <Grid lg={8}>
           <Example1 />
         </Grid>
